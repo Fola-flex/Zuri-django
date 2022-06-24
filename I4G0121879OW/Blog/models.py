@@ -11,4 +11,7 @@ class Post(models.Model):
     created_date = models.DateTimeField()
     published_date = models.DateTimeField("date published", default=datetime.now())
 
+    def __str__(self) -> str:
+        return self.title
+
 
